@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 1140px;
+  margin: 0 auto;
+}
+
+.header {
+  background-image: url("../images/header/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 38px;
+  padding-bottom: 260px;
+}
+
+.logotype {
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 36px;
+  color: #fff;
+  display: inline-block;
+  width: 96px;
+}
+
+.navigation {
+  font-size: 0;
+  margin-bottom: 254px;
+}
+
+.navigation__list {
+  display: inline-block;
+  width: calc(100% - 96px);
+  text-align: right;
+}
+
+.navigation__list-item {
+  display: inline-block;
+}
+
+.navigation__list-item:not(:last-child) {
+  margin-right: 34px;
+}
+
+.navigation__list-link {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.35px;
+  color: #fff;
+}
+
+.header__title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 48px;
+  line-height: 1.2;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.header__description {
+  font-family: "Roboto Slab", serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 52px;
+}
+
+.modal-btn {
+  display: block;
+  width: 176px;
+  height: 46px;
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 2px;
+  background-color: transparent;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: #fff;
+  text-transform: uppercase;
+  margin: 0 auto;
+}
