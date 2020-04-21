@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module 07</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+    <!-- <h1 class="title">Title</h1>
+    <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam, quidem?</p> -->
+
+    <!-- <div class="wrapper">
+        <div class="box"></div>
+    </div> -->
+
+    <!-- <header class="header">header</header>
+    <main class="main">main</main>
+    <footer class="footer">footer</footer> -->
+
+    <!-- <h2 class="subtitle">
+        <span class="subtitle-span">Lorem, ipsum.</span>
+        Lorem, ipsum.
+    </h2> -->
+
+    <form action="#" class="contact-form">
+        <input type="text" name="user-name" class="contact-form__input" placeholder="Your name" required minlength="2"
+            autofocus>
+        <input type="email" name="user-email" class="contact-form__input" placeholder="Your email" required>
+        <input type="tel" name="user-phone" class="contact-form__input" placeholder="096-111-11-11" required
+            pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}">
+
+        <div class="contact-form__block">
+            <h2 class="contact-form__block-title">Age</h2>
+
+            <label for="age16">16</label>
+            <input type="radio" name="age" id="age16" class="contact-form__radion-btn" value="16" checked>
+
+            <label for="age18">18</label>
+            <input type="radio" name="age" id="age18" class="contact-form__radion-btn" value="18">
+
+            <label for="age22">22</label>
+            <input type="radio" name="age" id="age22" class="contact-form__radion-btn" value="22">
+        </div>
+        <div class="contact-form__block">
+            <h2 class="contact-form__block-title">Hobby</h2>
+
+            <label>
+                football
+                <input type="checkbox" name="hobby" class="contact-form__checkbox" value="football" checked>
+            </label>
+
+
+            <label for="boxing">boxing</label>
+            <input type="checkbox" name="hobby" id="boxing" class="contact-form__checkbox" value="boxing">
+
+            <label for="swiming">swiming</label>
+            <input type="checkbox" name="hobby" id="swiming" class="contact-form__checkbox" value="swiming">
+        </div>
+        <div class="contact-form__block">
+            <textarea name="message" placeholder="Your message..." class="contact-from__textarea" required minlength="2"
+                maxlength="120"></textarea>
+        </div>
+        <div class="contact-form__block">
+            <h2>Select city</h2>
+            <select name="city" class="contact-form__select">
+                <option disabled selected>Select your city</option>
+                <option value="Kyiv">Kyiv</option>
+                <option value="Kharkiv">Kharkiv</option>
+                <option value="Odessa">Odessa</option>
+            </select>
+        </div>
+        <div class="contact-form__btn-wrapper">
+            <button type="submit" class="contact-form__btn">submit</button>
+            <button type="reset" class="contact-form__btn">clear</button>
+        </div>
+
+    </form>
+</body>
+
+</html>
