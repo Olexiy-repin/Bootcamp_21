@@ -1,0 +1,195 @@
+/* ubuntu-regular - latin_cyrillic */
+@font-face {
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Ubuntu Regular"), local("Ubuntu-Regular"),
+    url("../fonts/ubuntu-v14-latin_cyrillic-regular.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/ubuntu-v14-latin_cyrillic-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+picture {
+  display: block;
+}
+
+.children {
+  padding-top: 34px;
+  padding-bottom: 26px;
+}
+
+.container {
+  width: 280px;
+  margin: 0 auto;
+}
+
+.children__content {
+  margin-bottom: 42px;
+}
+
+.children__content-text-wrapper {
+  margin-bottom: 26px;
+}
+
+.children__content-text-wrapper::before {
+  display: block;
+  content: "";
+  width: 17px;
+  height: 13px;
+  background-image: url("../images/quote.png");
+  background-repeat: no-repeat;
+  margin-bottom: 10px;
+}
+
+.children__content-text {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.7px;
+  color: #464646;
+}
+
+.children__content-text:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.children__plashka {
+  border-radius: 8px;
+  background-color: rgb(117, 80, 222);
+  font-family: "Ubuntu", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.9px;
+  color: #fff;
+  text-align: center;
+  padding: 26px 26px 26px 26px;
+}
+
+.children__plashka_br {
+  display: block;
+}
+
+.children__plashka::before {
+  display: block;
+  content: "";
+  width: 60px;
+  height: 2px;
+  background-color: rgb(233, 172, 56);
+  margin: 0 auto;
+  margin-bottom: 16px;
+}
+
+@media (min-width: 768px) {
+  .children {
+    padding-top: 40px;
+    padding-bottom: 32px;
+  }
+
+  .container {
+    width: 620px;
+  }
+
+  .children__content-text {
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 0.9px;
+  }
+
+  .children__content-text-wrapper::before {
+    width: 26px;
+    height: 20px;
+    background-image: url("../images/quote-md.png");
+    margin-bottom: 2px;
+    transform: translateX(-32px);
+  }
+
+  .children__plashka {
+    font-size: 20px;
+    line-height: 28px;
+    text-align: left;
+    letter-spacing: 1px;
+    padding: 38px 106px 40px 76px;
+    box-shadow: 3px 5.196px 18px 0px rgba(0, 0, 0, 0.15);
+    border-radius: 3px;
+    position: relative;
+  }
+
+  .children__plashka::before {
+    width: 100px;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%) rotate(90deg);
+  }
+
+  .children__plashka_br {
+    display: inline;
+  }
+}
+
+@media (min-width: 1320px) {
+  .children {
+    padding-top: 118px;
+    padding-bottom: 56px;
+  }
+
+  .container {
+    width: 1300px;
+  }
+
+  .children__content {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 116px;
+  }
+
+  .children__content-text-wrapper {
+    width: 536px;
+  }
+
+  .children__content-text {
+    font-size: 20px;
+    line-height: 35px;
+    letter-spacing: 1px;
+  }
+
+  .children__content-text:not(:last-child) {
+    margin-bottom: 26px;
+  }
+
+  .children__plashka {
+    font-size: 25px;
+    line-height: 35px;
+    letter-spacing: 1.25px;
+    padding: 70px 258px 66px 226px;
+  }
+
+  .children__plashka::before {
+    width: 87px;
+    left: 156px;
+  }
+}
