@@ -1,0 +1,96 @@
+.header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+    url('../images/header/bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 32px;
+  padding-bottom: 260px;
+
+  &__title {
+    font-size: 48px;
+    line-height: 1.2;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 16px;
+  }
+
+  &__description {
+    font-family: $secondary-font;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 52px;
+  }
+
+  @media (min-resolution: 192dpi) {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+      url('../images/header/bg@2x.jpg');
+  }
+}
+
+@media (min-resolution: 192dpi) {
+  .header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+      url('../images/header/bg@2x.jpg');
+  }
+}
+
+.logotype {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 36px;
+  color: #ffffff;
+  animation-name: swing;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-delay: 1s;
+}
+
+.navigation {
+  margin-bottom: 244px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+
+  &__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    &-item:not(:last-child) {
+      margin-right: 34px;
+    }
+
+    &-link {
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 24px;
+      letter-spacing: 0.35px;
+      color: #fff;
+    }
+  }
+}
+
+.modal-btn {
+  display: block;
+  width: 180px;
+  height: 50px;
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 2px;
+  background-color: transparent;
+  font-size: 16px;
+  line-height: 24px;
+  color: #fff;
+  text-transform: uppercase;
+  margin: 0 auto;
+}

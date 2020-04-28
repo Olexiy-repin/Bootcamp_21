@@ -1,0 +1,146 @@
+.works {
+  padding: 98px 0;
+}
+
+.tabs-list {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin: 0 auto;
+  margin-bottom: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.tabs-list__item {
+}
+
+.tabs-list__btn {
+  background-color: transparent;
+  border: none;
+  font-family: $secondary-font;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #555555;
+  cursor: pointer;
+}
+
+.active-tab {
+  color: $main-color;
+}
+
+.tabs-list__item:not(:last-child) {
+  margin-right: 26px;
+}
+
+.works__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.works__list-item {
+  position: relative;
+}
+
+.works__list-item:hover .works-overlay {
+  height: 100%;
+  visibility: visible;
+}
+
+.works__list-item:hover .works-overlay * {
+  opacity: 1;
+}
+
+/* 
+    3 * 0 = 0;
+    3 * 1 = 3;
+    3 * 2 = 6;
+    3 * 3 = 9;
+  */
+
+.works__list-item:not(:nth-child(3n)) {
+  margin-right: 30px;
+}
+
+/* 
+  -0 + 3 = 3;
+  -1 + 3 = 2;
+  -2 + 3 = 1;
+  -3 + 3 = 0;
+  */
+
+.works__list-item:not(:nth-last-child(-n + 3)) {
+  margin-bottom: 30px;
+}
+
+.works-overlay {
+  width: 100%;
+  height: 0%;
+  background-color: transparentize($main-color, 0.3);
+  color: #fff;
+  position: absolute;
+  left: 0;
+  top: 0;
+  visibility: hidden;
+
+  -webkit-transition: all 0.5s linear;
+
+  -o-transition: all 0.5s linear;
+
+  transition: all 0.5s linear;
+}
+
+.works-overlay * {
+  opacity: 0;
+  -webkit-transition: all 1s linear 0.5s;
+  -o-transition: all 1s linear 0.5s;
+  transition: all 1s linear 0.5s;
+}
+
+.works-overlay__name {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 600;
+}
+
+.works-overlay__category {
+  font-family: $secondary-font;
+  font-size: 12px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+.works-overlay__link {
+  display: block;
+  font-family: $secondary-font;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 1.4px;
+  color: $main-color;
+  text-transform: uppercase;
+  width: 100px;
+  height: 38px;
+  background-color: rgb(255, 255, 255);
+  line-height: 38px;
+  padding-left: 20px;
+  background-image: url('../images/works/right-arrow.png');
+  background-repeat: no-repeat;
+  background-position: right 21px center;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.works-overlay__content {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
