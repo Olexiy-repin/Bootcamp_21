@@ -12,7 +12,7 @@ $companyName = $_POST['company-name'];
 $token = "1136312964:AAE8hYtJg1PHFwhoSgVG8X4bIXdhiDkjCkY";
  
 //нужна вставить chat_id (Как получить chad id, читайте ниже)
-$chat_id = "489882345";
+$chat_id = "-489882345";
  
 //Далее создаем переменную, в которую помещаем PHP массив
 $arr = array(
